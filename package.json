@@ -1,0 +1,52 @@
+{
+	"name": "nodejs-library",
+	"version": "0.0.0",
+	"description": "",
+	"license": "MIT",
+	"repository": "vadimdemedes/nodejs-library",
+	"author": {
+		"name": "Vadim Demedes",
+		"email": "vadimdemedes@hey.com",
+		"url": "https://github.com/vadimdemedes"
+	},
+	"type": "module",
+	"exports": {
+		"types": "./dist/index.d.ts",
+		"default": "./dist/index.js"
+	},
+	"engines": {
+		"node": ">=16"
+	},
+	"scripts": {
+		"dev": "tsc --watch",
+		"build": "tsc",
+		"prepare": "npm run build",
+		"test": "tsc --noEmit && xo && ava"
+	},
+	"files": [
+		"dist"
+	],
+	"keywords": [],
+	"devDependencies": {
+		"@sindresorhus/tsconfig": "^4.0.0",
+		"@vdemedes/prettier-config": "^2.0.1",
+		"ava": "^5.3.1",
+		"prettier": "^3.0.3",
+		"ts-node": "^10.9.1",
+		"typescript": "^5.2.2",
+		"xo": "^0.56.0"
+	},
+	"ava": {
+		"extensions": {
+			"ts": "module",
+			"tsx": "module"
+		},
+		"nodeArguments": [
+			"--loader=ts-node/esm"
+		]
+	},
+	"xo": {
+		"prettier": true
+	},
+	"prettier": "@vdemedes/prettier-config"
+}
