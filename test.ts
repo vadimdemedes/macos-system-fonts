@@ -1,6 +1,7 @@
 import test from 'ava';
-import hello from './source/index.js';
+import macosSystemFonts from './source/index.js';
 
-test('hello', t => {
-	t.is(hello(), 'world');
+test('list macOS system fonts', t => {
+	t.true(macosSystemFonts.length > 0);
+	t.true(macosSystemFonts.every(font => typeof font === 'string'));
 });

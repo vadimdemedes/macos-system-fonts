@@ -1,9 +1,9 @@
 {
-	"name": "nodejs-library",
+	"name": "macos-system-fonts",
 	"version": "0.0.0",
-	"description": "",
+	"description": "System fonts that come preinstalled in macOS",
 	"license": "MIT",
-	"repository": "vadimdemedes/nodejs-library",
+	"repository": "vadimdemedes/macos-system-fonts",
 	"author": {
 		"name": "Vadim Demedes",
 		"email": "vadimdemedes@hey.com",
@@ -26,7 +26,11 @@
 	"files": [
 		"dist"
 	],
-	"keywords": [],
+	"keywords": [
+		"mac",
+		"macos",
+		"font"
+	],
 	"devDependencies": {
 		"@sindresorhus/tsconfig": "^4.0.0",
 		"@vdemedes/prettier-config": "^2.0.1",

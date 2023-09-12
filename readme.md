@@ -1,17 +1,26 @@
-# nodejs-library
+# macos-system-fonts
 
-> Description
+> Names of fonts that come installed with macOS.
 
 ## Install
 
 ```sh
-npm install nodejs-library
+npm install macos-system-fonts
+```
+
+## Usage
+
+```js
+import macosSystemFonts from 'macos-system-fonts';
+
+console.log(macosSystemFonts);
+//=> ["Arial", "Avenir", ...]
 ```
 
 ## API
 
-### hello()
+### macosSystemFonts
 
-Type: `Function`
+Type: `string[]`
 
-Greet a person.
+Array of font names.
