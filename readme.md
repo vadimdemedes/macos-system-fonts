@@ -1,4 +1,4 @@
-# macos-system-fonts
+# macos-system-fonts [![test](https://github.com/vadimdemedes/macos-system-fonts/actions/workflows/test.yml/badge.svg)](https://github.com/vadimdemedes/macos-system-fonts/actions/workflows/test.yml)
 
 > Names of fonts that come installed with macOS.
 
